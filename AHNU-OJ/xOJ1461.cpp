@@ -26,19 +26,7 @@ public:
         }
 	}
 
-	void devide(int v) {
-		static int k=0;
-		ENode *p=a[v], *q;
-		while(p) {
-			if(p->adjVex == vSize-1)
-				return k;
-			else
-				k++;
-			p=p->nextArc;
-		}
-	}
-
-	int FMultiGraph(int k) {
+	int FMultiGraph() {
 		int c, *cost=new int [vSize];
 		int q, *d=new int [vSize], *p=new int [vSize];
 		int j, v, min;
@@ -54,8 +42,7 @@ public:
 			}
 			cost[j]=min; d[j]=q;
 		}
-		p[0]=0; p[k-1]=vSize-1; c=cost[0];
-		for(j=1; j<=k-2; j++) p[j]=d[p[j-1]];
+		c=cost[0];
 		delete [] cost; delete [] d; return c;
 	}
 
@@ -81,7 +68,7 @@ int main() {
 	int v, e;
 	cin >> v >> e;
 	Graph g(v, e);
-	g.test();
-	cout << g.FMultiGraph(g.devide());
+	//g.test();
+	cout << g.FMultiGraph();
 	return 0;
 }
