@@ -1,3 +1,35 @@
+/*********************************************
+
+第K小元素问题
+
+Time Limit:1000MS  Memory Limit:65536K
+Total Submit:704 Accepted:317
+
+Description
+
+用分治法编程解决在n个数当中找第K小元素问题（注意：不能用排序）。
+
+Input
+
+第一行输入n的值，第二行输入n个数，第三行输入K的值。
+
+Output
+
+n个数中的第K小元素。
+
+Sample Input
+
+
+5
+8 1 3 6 9
+3
+Sample Output
+
+
+6
+
+*********************************************/
+
 #include <iostream>
 using namespace std;
 

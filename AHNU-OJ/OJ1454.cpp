@@ -1,3 +1,37 @@
+/*********************************************
+
+栈的问题
+
+Time Limit:2000MS  Memory Limit:65536K
+Total Submit:534 Accepted:241
+
+Description
+
+栈是一种重要的数据结构，其主要的操作包括入栈和出栈。请编写程序，对任意给定的n，输出1，2，…，n的所有出栈顺序。
+
+Input
+
+正整数n（1≤n≤15）
+
+Output
+
+输出1，2，…，n的所有出栈顺序
+
+Sample Input
+
+
+3
+Sample Output
+
+
+3 2 1
+2 3 1
+2 1 3
+1 3 2
+1 2 3
+
+*********************************************/
+
 #include<iostream>
 using namespace std;
 

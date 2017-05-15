@@ -1,87 +1,34 @@
-#include <iostream>
-using namespace std;
+/*********************************************
 
-struct ENode {
-	int adjVex;
-	int weight;
-	ENode *nextArc;
-};
+Description
 
-class Graph {
-public:
-	Graph(int v, int e) {
-		vSize=v; eSize=e;
+一个无向连通图的生成树是一个极小连通子图，它包括图中全部结点，并且有尽可能少的边。一棵生成树的代价是树中各条边上的代价之和。一个网络的各生成树中，具有最小代价的生成树称为该网络的最小代价生成树（minimum-cost spanning tree）。
 
-		int i, u;
-		ENode *p;
+Input
 
-		a = new ENode* [vSize];
-		for(i=0; i<vSize; i++) a[i]=NULL;
+第一行输入结点个数n和边的个数m，以下m行输入各边的两个结点u、v及该边上的代价。
 
-		for(i=0; i<eSize; i++) {
-			p = new ENode;
-			cin >> u >> p->adjVex >> p->weight;
-			p->nextArc = a[u];
-			a[u] = p;
-        }
-	}
+Output
 
-	void devide(int v) {
-		static int k=0;
-		ENode *p=a[v], *q;
-		while(p) {
-			if(p->adjVex == vSize-1)
-				return k;
-			else
-				k++;
-			p=p->nextArc;
-		}
-	}
+如果有生成树，则输出最小生成树的代价；如果没有生成树，则输出"no spanning tree"。
 
-	int FMultiGraph(int k) {
-		int c, *cost=new int [vSize];
-		int q, *d=new int [vSize], *p=new int [vSize];
-		int j, v, min;
-		cost[vSize-1]=0; d[vSize-1]=-1;
-		for(j=vSize-2; j>=0; j--) {
-			min = 32768;
-			for(ENode *r=a[j]; r; r=r->nextArc) {
-				v=r->adjVex;
-				if(r->weight + cost[v] < min) {
-					min = r->weight + cost[v];
-					q = v;
-				}
-			}
-			cost[j]=min; d[j]=q;
-		}
-		p[0]=0; p[k-1]=vSize-1; c=cost[0];
-		for(j=1; j<=k-2; j++) p[j]=d[p[j-1]];
-		delete [] cost; delete [] d; return c;
-	}
+Sample Input
 
-	void test() {
-		int i;
-		cout << endl;
-		for(i=0; i<vSize; i++) {
-			cout << "a[" << i << "]";
-			ENode *p = a[i];
-			while(p) {
-				cout << "->" << p->adjVex << "(" << p->weight << ")";
-				p = p->nextArc;
-			}
-			cout << endl;
-		}
-	}
-protected:
-	ENode **a;
-	int vSize, eSize;
-};
 
-int main() {
-	int v, e;
-	cin >> v >> e;
-	Graph g(v, e);
-	g.test();
-	cout << g.FMultiGraph(g.devide());
-	return 0;
-}
+6 10
+1 2 10 
+1 4 30 
+1 5 45 
+2 3 50 
+2 5 40 
+2 6 25 
+3 5 35 
+3 6 15 
+4 6 20 
+5 6 55
+Sample Output
+
+
+105
+
+*********************************************/

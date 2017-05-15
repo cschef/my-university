@@ -1,3 +1,35 @@
+/*********************************************
+
+子集和数问题
+
+Time Limit:1000MS  Memory Limit:65536K
+Total Submit:933 Accepted:282
+
+Description
+
+已知n个不同正整数wi，0<=i<=n-1，的集合，求该集合的所有满足条件的子集，使得每个子集中的正整数之和等于另一个给定的正整数M。
+
+Input
+
+第一行输入n和M的值，第二行输入n个不同的正整数wi（i=0，…，n）。
+
+Output
+
+如果有答案，则输出所有满足条件的子集（用固定长度n-元组xi表示，xi=0或1，i=0，…，n）。如果没有答案，则输出“no solution!”。
+
+Sample Input
+
+
+4 31
+11 13 24 7
+Sample Output
+
+
+1 1 0 1
+0 0 1 1
+
+*********************************************/
+
 #include <iostream>
 using namespace std;
 

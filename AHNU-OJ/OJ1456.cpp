@@ -1,3 +1,35 @@
+/*********************************************
+
+最大最小元问题
+
+Time Limit:1000MS  Memory Limit:65536K
+Total Submit:811 Accepted:303
+
+Description
+
+请改写教材中的分治算法MaxMin，使其可以输出n个数中的最大值和次最大值以及最小值和次最小值（注意：不能用排序）。
+
+Input
+
+第一行输入数的个数n，第二行输入n个数。
+
+Output
+
+第一行输出最大值和次最大值，第二行输出最小值和次最小值。
+
+Sample Input
+
+
+3
+2 1 3
+Sample Output
+
+
+3 2
+1 2
+
+*********************************************/
+
 #include <iostream>
 using namespace std;
 
