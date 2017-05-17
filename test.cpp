@@ -23,4 +23,4 @@ int main() {
 	cout << p.get_x() << endl;
 	cout << p.get_y() << endl;
 	return 0;
-} 
+}

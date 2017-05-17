@@ -18,7 +18,7 @@ public:
 			a[i] = NULL;
 			
 		}
-		for(i=0; i<eSize; i++) {
+		for(int i=0; i<eSize; i++) {
 			int u,v;
 			cin >> u >> v;
 			ENode *s = new ENode;
@@ -32,14 +32,14 @@ public:
 		}
 	}
 	void DFS() {
-		int i;
-		cout<<"DFS:";
-		for(i=0;i<vSize;i++) {
-			if(visited[i]==-1)
+		cout << "DFS:";
+		for(int i=0; i<vSize; i++) {
+			if(visited[i] == -1)
 				DFS_Travel(i);
 		}
-		cout<<endl;
+		cout << endl;
 	}
+	
 	void show() {
 		int i;
 		for(i=0;i<vSize;i++) {
@@ -74,6 +74,6 @@ int main() {
 	cin >> v >> e;
 	Graph g(v, e);
 	g.show();
-	g.DFS();
+	//g.DFS();
 	return 0;
 }
