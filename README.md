@@ -8,8 +8,14 @@
 # 课程体系
 
 |大一|大二|大三|大四|
-|:--:|:--:|:--:|:--:|
-|[x]计算机专业导论|[x]数据结构|[x]操作系统|[ ]计算机系统结构|
+|:-|:-|:-|:-|
+| C 语言程序设计| [数据结构](./Data-Structure/)| [操作系统](./Operating-System/)| 计算机系统结构|
+| C++ 程序设计| [算法设计与分析](./Algorithm-Design-and-Analysis/)| [编译原理](./Principles-of-Compiling/)| 面向对象开发实践|
+| Java 程序设计| C# 程序设计| [微型计算机原理](./Principles-of-Microcomputer/)| 软件安全|
+| 计算机专业导论| [数据库原理与技术](./Principles-of-Database/)| [计算机网络](./Computer-Network/)||
+| 高等数学| 计算机组成原理| 软件工程||
+| 线性代数| 离散数学| 软件测试||
+|| 概率论与数理统计|||
 
 ## License
 
