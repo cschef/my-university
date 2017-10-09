@@ -5,7 +5,7 @@
 ![img](https://img.shields.io/badge/Language-C-blue.svg?style=flat-square)
 ![img](https://img.shields.io/badge/Language-C%2B%2B-blue.svg?style=flat-square)
 
-# 课程体系
+## 课程体系
 
 |大一|大二|大三|大四|
 |:-|:-|:-|:-|
