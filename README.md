@@ -17,6 +17,10 @@
 | 线性代数| 离散数学| 软件测试||
 || 概率论与数理统计|||
 
+|选修|
+|:-|
+|[人工智能](./Artificial-Intelligence)、人机交互、通信原理|
+
 ## License
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />
