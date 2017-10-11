@@ -4,6 +4,9 @@
 
 ![img](https://img.shields.io/badge/Language-C-blue.svg?style=flat-square)
 ![img](https://img.shields.io/badge/Language-C%2B%2B-blue.svg?style=flat-square)
+![img](https://img.shields.io/badge/Language-C%23-blue.svg?style=flat-square)
+![img](https://img.shields.io/badge/Language-Java-blue.svg?style=flat-square)
+![img](https://img.shields.io/badge/Language-Assembly-blue.svg?style=flat-square)
 
 ## 课程体系
 
@@ -17,9 +20,14 @@
 | 线性代数| 离散数学| 软件测试||
 || 概率论与数理统计|||
 
-|选修|
-|:-|
-|[人工智能](./Artificial-Intelligence)、人机交互、通信原理|
+<table>
+  <tr>
+    <td><b>选修</b></td>
+      <td>
+        <a href="./Artificial-Intelligence">人工智能</a>、人机交互、通信原理、Matlab图像处理、Python 程序设计
+      </td>
+  </tr>
+</table>
 
 ## License
 
