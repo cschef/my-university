@@ -2,13 +2,11 @@
 
 《操作系统》课程
 
-- 进程的描述与控制 [课件](./ppt/操作系统第2章.pdf)
-  - 进程同步与信号量 [课件](./ppt/L16-进程同步与信号量.pdf)
-  - 进程同步算法习题
-  - 实验：生产者与消费者问题 [文档](./exp-producer-consumer.md)  
-    信号量解决方案 [代码](./exp-producer-consumer-semaphores.cpp)
-- CPU 的调度与死锁 [课件](./ppt/操作系统第3章.pdf)
-  - 进程调度 [课件1](./ppt/L14-CPU调度策略.pdf) [课件2](./pptL15-一个实际的schedule函数.pdf)
+- 进程的描述与控制 [课件](./ppt/)
+  - 进程互斥与同步算法 [文档](./algo-process-mutex-and-sync.md)
+  - 实验：生产者与消费者问题模拟 [文档](./exp-producer-consumer.md) [代码](./exp-producer-consumer-semaphores.cpp)
+- CPU 的调度与死锁 [课件](./ppt/)
+  - 进程调度
 
 ## 相关资料
 
