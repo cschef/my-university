@@ -1,14 +1,20 @@
-//exp-producer-consumer-semaphores.cpp
-//操作系统-生产者消费者问题
-//模拟纪录型信号量解决方案
-//可以通过调整producer()和consumer()中Sleep()的时间，
-//来调节生产者和消费者的速度，从而看到不同的实验现象
+/*
+Name: exp-producer-consumer-semaphores.cpp
+Copyright:
+Author: DINGPENG
+Date: 11/10/17 11:27
+Description:
+- 操作系统-生产者消费者问题模拟
+- 模拟纪录型信号量解决方案
+- 可以通过调整producer()和consumer()中Sleep()的时间，
+  来调节生产者和消费者的速度，从而看到不同的实验现象
+Environment: DEV C++ (TDM-GCC-4.9.2)
+*/
 
-#include "stdafx.h"
 #include <iostream>
-#include <cstdlib> //srand() rand()
-#include <ctime> //time()
-#include <Windows.h> //createThread() Sleep()
+#include <cstdlib>		//srand() rand()
+#include <ctime>		//time()
+#include <Windows.h>	//createThread() Sleep()
 
 #define n 10
 
@@ -40,7 +46,7 @@ DWORD WINAPI producer(LPVOID lpParameter) {
 		wait(mutex);
 		buffer[in] = nextp;
 		in = (in + 1) % n;
-		std::cout << "\n>>> 缓冲区放入产品" << nextp << "\n";
+		std::cout << "\n+++ 缓冲区放入产品" << nextp << "\n";
 		signal(mutex);
 		signal(full);
 	}
@@ -55,7 +61,7 @@ DWORD WINAPI consumer(LPVOID lpParameter) {
 		//从缓冲区取出产品
 		wait(mutex);
 		nextc = buffer[out];
-		std::cout << "\n<<< 缓冲区取出产品" << nextc << "\n";
+		std::cout << "\n--- 缓冲区取出产品" << nextc << "\n";
 		out = (out + 1) % n;
 		signal(mutex);
 		signal(empty);

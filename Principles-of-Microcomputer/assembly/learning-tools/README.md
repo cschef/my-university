@@ -38,3 +38,7 @@ User:   www.weste.net
 RegKey: 27R3-1I2UJHRJSF3C3FRTQZXJ
 
 ```
+
+## 参考资料
+
+[Windows10下搭建汇编语言开发环境（利用DOSBOX和MASM32）](http://blog.csdn.net/doniexun/article/details/45438457)
