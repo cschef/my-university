@@ -12,11 +12,11 @@
 
 |大一|大二|大三|大四|
 |:-|:-|:-|:-|
-| 高等数学| 概率论与数理统计| 数值分析| （未添加）|
+| 高等数学| 概率论与数理统计| [数值分析](./Numerical-Analysis/)| （未添加）|
 | 离散数学| [数据结构](./Data-Structure/)| [操作系统](./Operating-System/)| |
 | 线性代数| [算法设计与分析](./Algorithm-Design-and-Analysis/)| [计算机网络](./Computer-Network/)| |
 | C 语言程序设计| [数据库原理与技术](./Principles-of-Database/)| [编译原理](./Principles-of-Compiling/)| |
-| C++ 程序设计| 计算机组成原理| 计算机图形学| |
+| C++ 程序设计| 计算机组成原理| [计算机图形学](./Computer-Graphics/)| |
 | 模拟电子技术| 数字逻辑电路| [微型计算机原理](./Principles-of-Microcomputer/)| |
 | 计算机专业导论| C# 程序设计| 嵌入式系统| |
 | | | [软件工程](./Software-Engineering/)| |

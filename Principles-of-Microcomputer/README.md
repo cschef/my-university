@@ -1,4 +1,4 @@
-# Principles-of-Microcomputer
+# Principles of Microcomputer
 
 《微型计算机原理》课程
 
