@@ -2,6 +2,8 @@
 
 《操作系统》课程
 
+> An operating system (OS) is system software that manages computer hardware and software resources and provides common services for computer programs. -- [Wikipedia](https://en.wikipedia.org/wiki/Operating_system)
+
 - 进程的描述与控制 [课件](./ppt/)
   - 进程互斥与同步算法 [文档](./algo-process-mutex-and-sync.md)
   - 实验：生产者与消费者问题模拟 [文档](./exp-producer-consumer.md) [代码](./exp-producer-consumer-semaphores.cpp)
